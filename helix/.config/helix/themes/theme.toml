@@ -1,0 +1,71 @@
+# Author: maodun
+# Modifydate: 2026.10.25
+
+
+
+# Syntax Scopes
+"keyword"  = { fg = "red" }
+"type"     = { fg = "cyan" }
+"variable" = { fg = "yellow" }
+"function" = { fg = "blue" }
+"comment"  = { fg = "gray", modifiers = ["italic", "dim"] }
+"constant" = { fg = "white", modifiers = ["bold"] }
+"string"   = { fg = "green" }
+
+
+
+# UI Scopes
+"ui.background"      = { bg = "black" }
+"ui.text"            = { fg = "gray" }
+"ui.text.focus"      = { fg = "white", bg = "black", modifiers = ["reversed"] }
+"ui.text.inactive"   = { fg = "gray", modifiers = ["dim"] }
+"ui.cursor"          = { fg = "black", bg = "white" }
+"ui.selection"       = { fg = "black", bg = "white" }
+"ui.linenr"          = { fg = "b_black", modifiers = ["dim"] }
+"ui.linenr.selected" = { fg = "white", modifiers = ["bold"] }
+
+
+
+# Makeup
+"markup"           = { fg = "gray" }
+"markup.heading"   = { fg = "blue", modifiers = ["bold"] }
+"markup.list"      = { fg = "red", modifiers = ["bold"] }
+"markup.bold"      = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic"    = { fg = "magenta", modifiers = ["italic"] }
+"markup.link.text" = { fg = "red" }
+"markup.link.url"  = { fg = "green", modifiers = ["underlined"] }
+"markup.quote"     = { fg = "cyan", modifiers = ["italic"] }
+"markup.raw"       = { fg = "green" } 
+
+
+
+# Diagnostics (gutter)
+"error"      = { fg = "red", modifiers = ["underlined"] }
+"warning"    = { fg = "yellow" }
+"info"       = { fg = "blue" }
+"hint"       = { fg = "gray" }
+"diagnostic" = { modifiers = ["underlined"] }
+
+
+
+# Palette
+[palette]
+	## Colors
+	black   = "#242424"
+	red     = "#f62b5a"
+	green   = "#47b413"
+	yellow  = "#e3c401"
+	blue    = "#24acd4"
+	magenta = "#f2affd"
+	cyan    = "#13c299"
+	gray    = "#e6e6e6"
+
+	## Bright Colors
+	b_black   = "#616161"
+	b_red     = "#ff4d51"
+	b_green   = "#35d450"
+	b_yellow  = "#e9e836"
+	b_blue    = "#5dc5f8"
+	b_magenta = "#feabf2"
+	b_cyan    = "#24dfc4"
+	white     = "#ffffff"

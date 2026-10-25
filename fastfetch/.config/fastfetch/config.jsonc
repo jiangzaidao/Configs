@@ -1,0 +1,38 @@
+// Author: maodun
+// Modifydate: 2026.10.25
+
+
+
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+	"modules": [
+		"title",
+		"separator",
+		"os",
+		"kernel",
+		"uptime",
+		"packages",
+		"datetime",
+		"localip",
+		"separator",
+		"battery",	
+		"brightness",
+		"sound",
+		"bluetooth",
+		"separator",
+		{
+			"type": "cpu",
+			"temp": true,
+		},
+		"cpuusage",
+		{
+			"type": "gpu",
+			"temp": true,
+			"driverSpecific": true
+		},
+		"memory",
+		"disk",
+		"break"
+	]
+}
+

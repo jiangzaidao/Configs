@@ -1,0 +1,37 @@
+# Author: maodun
+# Modifydate: 2026.10.25
+
+
+
+# Markdown 
+[[language]]
+	name = "markdown"
+	indent = { tab-width = 8, unit = "\t" }
+
+
+
+# Toml
+[[language]]
+	name = "toml"
+	indent = { tab-width = 8, unit = "\t" }
+
+
+
+# Kdl
+[[language]]
+	name = "kdl"
+	indent = { tab-width = 8, unit = "\t" }
+
+
+
+# ini
+[[language]]
+	name = "ini"
+	indent = { tab-width = 8, unit = "\t" }
+
+
+
+# jsonc
+[[language]]
+	name = "jsonc"
+	indent = { tab-width = 8, unit = "\t" }

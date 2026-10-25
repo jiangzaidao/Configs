@@ -1,0 +1,28 @@
+# Author: maodun
+# Modifydate: 2026.10.25
+
+
+
+[user]
+		name  = maodun
+		email = zaidao.jiang@gmail.com
+
+
+
+[status]
+		branch = true
+		showStash = true
+		showUntrackedFiles = all
+
+
+
+[push]
+		autoSetupRemote = true
+		default = current
+		followTags = true
+
+
+
+[pull]
+		default = current
+		

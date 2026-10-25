@@ -1,0 +1,102 @@
+// Author: maodun
+// Modifydate: 2026.10.25
+
+
+
+// Layout Configuration
+layout {
+	gaps 4
+	center-focused-column "always"
+	default-column-display "tabbed"
+	background-color "#242424"
+
+	preset-column-widths {
+		proportion 0.5
+		proportion 1.0
+	}
+
+	default-column-width { proportion 0.5; }
+
+	preset-window-heights {
+		proportion 0.5
+		proportion 1.0
+	}
+
+	tab-indicator {
+		hide-when-single-tab
+		gap 8
+		width 4
+		position "left"
+		gaps-between-tabs 4
+		corner-radius 8
+	}
+}
+
+
+
+// Window-rule Configuration
+window-rule {
+	geometry-corner-radius 8
+	clip-to-geometry true
+}
+
+
+
+// Bind Keys Configuation
+binds {
+	// Basic Key
+	Mod+Q repeat=false { close-window; }
+	Mod+Shift+Q { quit; }
+
+	// Column Overview Display
+	Mod+R { switch-preset-column-width; }
+	Mod+W { toggle-column-tabbed-display; }
+	Mod+O repeat=false { toggle-overview; }
+
+	// Focused Column Change
+	Mod+Left  { focus-column-left; }
+	Mod+Right { focus-column-right; }
+	Mod+Down  { focus-window-or-workspace-down; }
+	Mod+Up    { focus-window-or-workspace-up; }
+
+	// Focuesd Column Movement
+	Mod+Ctrl+Left  { move-column-left; }
+	Mod+Ctrl+Right { move-column-right; }
+	Mod+Ctrl+Down  { move-window-down-or-to-workspace-down; }
+	Mod+Ctrl+Up    { move-window-up-or-to-workspace-up; }
+
+	// Consume Columns
+	Mod+BracketLeft  { consume-or-expel-window-left; }
+	Mod+BracketRight { consume-or-expel-window-right; }
+
+	// Volume Keys
+	F3 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+	F2 allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+	F1 allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+	F9 allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+
+	// Brightness Keys
+	F5 allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+	F4 allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+	// Running Programs
+	Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+	Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+	Print { screenshot; }
+	Ctrl+Print { screenshot-screen; }
+	Alt+Print { screenshot-window; }
+}
+
+
+
+// Other Configuration
+spawn-at-startup "fcitx5"
+spawn-at-startup "foot"
+
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+	skip-at-startup
+}
+	
