@@ -22,14 +22,6 @@ stow -t ~ yazi
 
 
 
-# 网络设置
-sudo pacman -S openssh
-mkdir -p ~/.ssh
-cd ~/.ssh
-ssh-keygen -t ed25519 -C "githubkey"
-
-
-
 # 硬件驱动
 sudo pacman -S amd-ucode mesa vulkan-radeon nvidia-open nvidia-utils 
 sudo mkinitcpio -P
@@ -58,6 +50,14 @@ sudo pacman -S fcitx5 fcitx5-chinese-addons fcitx5-configtool
 sudo pacman -S niri xwayland-satellite xdg-desktop-portal-wlr fuzzel foot
 
 sudo pacman -S firefox git fastfetch 7zip fd ripgrep
+
+
+
+# 网络设置
+sudo pacman -S openssh
+mkdir -p ~/.ssh
+cd ~/.ssh
+ssh-keygen -t ed25519 -C "githubkey"
 
 
 
