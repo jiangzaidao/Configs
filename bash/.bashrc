@@ -19,7 +19,7 @@ PS1='[\u@\h \W]\$ '
         alias intsall='sudo pacman -S'
         alias uninstall='sudo pacman -Rns'
         alias update='sudo pacman -Syu'
-        alias mount='sudo mount -t exfat /dev/sda1 /mnt'
+        alias mount='sudo mount -t exfat -o rw,uid=1000,gid=1000 /dev/sda1 /mnt'
         alias umount='sudo umount -l /mnt'
 
         # Application Alias
