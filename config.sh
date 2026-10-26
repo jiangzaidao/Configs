@@ -8,6 +8,8 @@ set -euo pipefail
 
 
 # 配置文件
+sudo pacman -S stow
+
 stow -t ~ bash
 stow -t ~ fastfetch
 stow -t ~ fcitx5
