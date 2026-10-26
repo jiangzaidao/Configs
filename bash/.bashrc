@@ -30,6 +30,12 @@ PS1='[\u@\h \W]\$ '
 
 
 
+# Helix
+export EDITOR=helix
+export VISUAL=helix
+
+
+
 # Yazi
 function y() {
         local tmp cwd; tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
