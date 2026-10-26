@@ -18,7 +18,7 @@ stow -t ~ fuzzel
 stow -t ~ git
 stow -t ~ helix
 stow -t ~ niri
-stow -t /etc nvidia 
+sudo stow -t /etc nvidia 
 stow -t ~ ssh
 stow -t ~ yazi
 
