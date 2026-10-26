@@ -16,7 +16,7 @@ PS1='[\u@\h \W]\$ '
         ## Basic Command
         alias ls='ls --color=auto'
         alias grep='grep --color=auto'
-        alias intsall='sudo pacman -S'
+        alias install='sudo pacman -S'
         alias uninstall='sudo pacman -Rns'
         alias update='sudo pacman -Syu'
         alias mount='sudo mount -t exfat -o rw,uid=1000,gid=1000 /dev/sda1 /mnt'
