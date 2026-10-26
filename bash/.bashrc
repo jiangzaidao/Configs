@@ -24,7 +24,7 @@ PS1='[\u@\h \W]\$ '
 
         # Application Alias
         alias net='nmtui'
-        alias bt='bluetooth'
+        alias bt='bluetoothctl'
         alias fs='fastfetch'
         alias ns='niri --session'
 
