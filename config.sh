@@ -25,7 +25,8 @@ stow -t ~ yazi
 
 
 # 硬件驱动
-sudo pacman -S amd-ucode mesa vulkan-radeon nvidia-open nvidia-utils 
+sudo pacman -S amd-ucode mesa vulkan-radeon nvidia-open nvidia-utils
+sudo sed -i -E '/^HOOKS=/{s/\bkms[[:space:]]*//; s/[[:space:]]+/ /g; s/\( /\(/; s/ \)/\)/}' /etc/mkinitcpio.conf
 sudo mkinitcpio -P
 
 sudo pacman -S pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack
